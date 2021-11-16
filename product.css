@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+html{
+  font-size:16px;/*sets the font size for whole document so relatives units could be used for different elements (rem ,em)*/
+}
+@media(max-width:960px){
+  html{
+    font-szie:14px;
+  }
+}
+@media(max-width:480px){
+  html{
+    font-size:12px;
+  }
+}
+body{
+  background:#eee;
+  font-family: 'Lato', sans-serif;
+}
+#header ul li{
+  display:flex;
+  justify-content:space-between;
+  list-style-type:none;
+  display:inline;
+  margin:2rem ;
+}
+.logo-nav{
+  display:flex;
+  justify-content:space-between;
+}
+#header-img{
+  width:20rem;
+  height:2.5rem
+}
+a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+a:hover{
+  color:rgb(98,67,170);
+}
+hr{
+  border:.03rem solid rgb(98,67,170);
+}
+h1{
+  font-size:3rem;
+}
+form{
+  width:100%;
+  text-align:center;
+}
+input{
+  padding:0.8rem;
+  border:.15rem solid rgb(98,67,170);
+  border-radius:5rem;
+}
+[type:email]:target{
+  border:2rem solid black ;
+}
+#submit{
+  background:rgb(98,67,170);
+  color:white;
+  font-weight:bold;
+  margin-left:2.5rem;/*makes gap between email input and button*/
+}
+#credentials{
+  text-align:center;
+}
+#features .icon{
+  display:flex;
+  align-items:center;
+}
+#features .grid{
+  display:flex;
+  justify-content:center; 
+}
+i{
+  color:rgb(98,67,170);
+}
+#working{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+#pricing{
+  display:flex;
+  justify-content:space-around;
+}
+#pricing div{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:20%;
+  height:50%;
+  border:.03rem solid rgb(98,67,170);
+  border-radius:0.8rem;
+}
+#pricing h2{
+  border-radius:0.8rem;
+  border-bottom-right-radius:0rem;/*for setting border bottom radii*/
+  border-bottom-left-radius:0rem;
+  padding:0.07rem;
+  width:100%;
+  background:rgb(98,67,170);
+  color:white;
+  font-style:bold;
+  margin-top:0.005em;
+}
+span{
+  color:rgb(98,67,170);
+   font-weight:bold;
+}
+#pricing input{
+  text-align:center;
+  width:40%;
+  padding:0.4rem 0.7rem;
+  border-radius:0.3rem;
+  margin-right:2.5rem;
+  font-size:1rem;
+}
+footer{
+  display:flex;
+  justify-content:space-between;
+  background:rgb(98,67,170);
+  color:white;
+  height:100%;
+}
+footer p{
+  margin-right:2rem;
+}
+footer ul li{
+  display:flex;
+  justify-content:space-between;
+  list-style-type:none;
+  display:inline;
+  margin:20px;
+}
